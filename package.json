@@ -1,7 +1,7 @@
 {
     "name": "acacia",
     "version": "1.0.0",
-    "description": "An Easy-to-use CSS Framework inspired by Microsoft Window 95",
+    "description": "An Easy-to-use CSS UI KIT inspired by Microsoft Window 95",
     "author": "chunza2542 <chunza2542@hotmail.com>",
     "directories": {
         "src": "src"
