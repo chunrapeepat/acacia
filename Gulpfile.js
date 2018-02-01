@@ -13,7 +13,7 @@ gulp.task('build-full', function() {
 })
 
 gulp.task('development', function() {
-    gulp.watch('src/*.scss', ['build-full'])
+    gulp.watch(['src/*.scss', 'src/**/*.scss'], ['build-full'])
 })
 
 function build({ src = '', prefix = '', basename = '' }) {
