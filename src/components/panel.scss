@@ -1,0 +1,27 @@
+.aca-panel {
+    width: 100%;
+    border-top: ridge 1px white;
+    border-left: ridge 1px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px black;
+
+    & > .header {
+        width: calc(100% - 20px);
+        color: white;
+        padding: 5px 10px;
+        font-weight: bold;
+        background: linear-gradient(90deg, $main-color, #AACAF4);
+    }
+
+    & > .body {
+        width: calc(100% - 40px);
+        padding: 20px;
+        background: $main-backgroud;
+        @include clearfix;
+    }
+
+    & > .body > .footer {
+        padding-top: 10px;
+        float: right;
+    }
+}
