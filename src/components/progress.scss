@@ -1,12 +1,15 @@
 .aca-progress {
-    width: 100%;
+    width: calc(100% - 4px);
     height: 30px;
+    padding: 2px;
     border-top: ridge 1px black;
     border-left: ridge 1px black;
     border-bottom: ridge 2px white;
     border-right: ridge 2px white;
 }
 
-.aca-progress.aca-progress-bar {
-    
+.aca-progress > .aca-progress-bar {
+    height: 30px;
+    transition: 0.5s;
+    background: $main-color;
 }
