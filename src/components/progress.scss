@@ -1,14 +1,21 @@
+$progress-height: 25;
+$progress-padding: 2;
+
 .aca-progress {
-    width: calc(100% - 4px);
-    height: 25px;
-    padding: 2px;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: #{$progress-height}px;
+    padding: #{$progress-padding}px;
     background: $main-backgroud;
 
     @include sinking-border;
+
+    & > .aca-progress-bar {
+        // NOTE: hight - padding * 2 (top & bottom) - 3 (border size)
+        height: #{$progress-height - $progress-padding * 2 - 3}px;
+        transition: 0.5s;
+        background: $main-color;
+    }
 }
 
-.aca-progress > .aca-progress-bar {
-    height: 25px;
-    transition: 0.5s;
-    background: $main-color;
-}
