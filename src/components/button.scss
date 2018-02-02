@@ -1,61 +1,53 @@
-$button-font-size: 16px;
-
 .aca-button {
+    @include floating-border;
+
     outline: none;
     cursor: pointer;
     position: relative;
-    font-size: $button-font-size;
     padding: 5px 12px;
+    font-size: #{$default-font-size}px;
     background-color: $main-backgroud;
 
-    @include floating-border;
-
     &:active {
-        background-color: $main-backgroud-hover;
-
         @include sinking-border;
+
+        background-color: $main-backgroud-hover;
     }
 
     &:active::before {
+        @include set-position($top: 3, $left: 3, $right: 3, $bottom: 3);
+
         content: "";
         position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
         border: dotted 1px black;
     }
 }
 
 .aca-button-link {
     border: 0;
+    padding: 5px;
     outline: none;
     cursor: pointer;
     position: relative;
-    font-size: $button-font-size;
-    padding: 5px;
     color: $main-color;
     text-decoration: none;
     background-color: Transparent;
+    font-size: #{$default-font-size}px;
 
     &:active::after {
+        @include set-position($top: 3, $left: 5, $right: 5, $bottom: 3);
+
         content: "";
         position: absolute;
-        top: 3px;
-        left: 5px;
-        right: 5px;
-        bottom: 3px;
         border: dotted 1px black;
     }
 }
 
 .aca-button.suggestion::after {
+    @include set-position($top: -2, $left: -2, $right: -3, $bottom: -3);
+
     content: "";
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -3px;
-    bottom: -3px;
     border: ridge 1px black;
 }
 

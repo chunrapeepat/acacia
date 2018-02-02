@@ -21,7 +21,14 @@
 
 @mixin border-box-full-width {
     box-sizing: border-box;
-    width: 100%;  
+    width: 100%;
+}
+
+@mixin set-position($top: 0, $left: 0, $right: 0, $bottom: 0) {
+    top: #{$top}px;
+    left: #{$left}px;
+    right: #{$right}px;
+    bottom: #{$bottom}px;
 }
 
 @mixin clearfix() {
