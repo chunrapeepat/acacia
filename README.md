@@ -9,7 +9,7 @@
   </a>
 </div>
 
-## Feature Requst & Issue
+## Feature Request & Issue
 Checkout this link https://github.com/chunza2542/acacia/issues,
 
 ## Installation
@@ -84,8 +84,8 @@ This code showing an example of Copying Files panel
     <div class="header">Heading</div>
     <div class="body">
     	Something...
-		<div class="footer">
-        	<button class="aca-button suggestion">OK</button>
+	<div class="footer">
+            <button class="aca-button suggestion">OK</button>
             <button class="aca-button">Cancel</button>
             <button class="aca-button">Browse...</button>
        	</div>
