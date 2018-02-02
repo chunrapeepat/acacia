@@ -40,6 +40,59 @@ This code showing an example of Copying Files panel
 
 ## Documentation
 
+### Button
+- __aca-button__ - MS WIN95 Button class
+- __suggesstion__ - Suggestion Button
+- __aca-button-link__ - Button for Link Button or `link` tag
+```html
+<button class="aca-button suggestion">OK...</button>
+<button class="aca-button">Cancel...</button>
+<button class="aca-button">Browse...</button>
+<button class="aca-button-link">Open in browser</button>
+```
+
+### Input
+- __aca-text-field__ - MS WIN95 Text Field class
+- __aca-select__ - MS WIN95 Select Input class
+- __aca-checkbox__ - MS WIN95 Checkbox Input class (Experiment)
+- __aca-radio__ - MS WIN95 Radio Input class (Experiment)
+```html
+<input type="text" class="aca-text-field" placeholder="Example...">
+
+<select class="aca-select">
+	<option value="">Bangkok</option>
+ 	<option value="">This is a very long text</option>
+</select>
+```
+
+### Progress Bar
+- __aca-progress__ - MS WIN95 Progress Bar
+- __aca-progress-bar__ - Progress Bar use inside class `aca-progress`
+```html
+<div class="aca-progress">
+	<div style="width: 35%;" class="aca-progress-bar"></div>
+</div>
+```
+
+### Panel
+- __aca-panel__ - MS WIN95 Panel Container
+- __header__ - Header Tab use inside class `aca-panel`
+- __body__ - Header Tab use inside class `aca-panel`
+- __footer__ - Footer Tab use inside class `body`
+```html
+<div class="aca-panel">
+    <div class="header">Heading</div>
+    <div class="body">
+    	Something...
+		<div class="footer">
+        	<button class="aca-button suggestion">OK</button>
+            <button class="aca-button">Cancel</button>
+            <button class="aca-button">Browse...</button>
+       	</div>
+    </div>
+</div>
+```
+
 
 ## Contribution Guide
 1. Fork & clone this repository to your local directory
