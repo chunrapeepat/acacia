@@ -9,3 +9,20 @@
   </a>
 </div>
 
+## Feature Requst & Issue
+Checkout this link https://github.com/chunza2542/acacia/issues,
+
+## Installation
+Download `dist` folder to your project directory, then put this code inside you `head` tag.
+```html
+<link rel="stylesheet" href="path/to/your/acacia.min.css">
+```
+
+## Documentation
+
+
+## Contribution Guide
+
+<hr>
+Made with <3 by Chun Rapeepat @chunza2542, Codebase from [Biomatic CSS Framework], Thank.(https://github.com/BioMaRu/biomatic)
+
