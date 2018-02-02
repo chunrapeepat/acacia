@@ -19,6 +19,11 @@
     border-right: ridge 2px white;
 }
 
+@mixin border-box-full-width {
+    box-sizing: border-box;
+    width: 100%;  
+}
+
 @mixin clearfix() {
   &::after {
     display: block;

@@ -1,10 +1,11 @@
 .aca-panel {
-    width: 100%;
-
     @include floating-border;
 
+    width: 100%;
+
     & > .header {
-        width: calc(100% - 20px);
+        @include border-box-full-width;
+
         color: white;
         padding: 5px 10px;
         font-weight: bold;
@@ -12,10 +13,11 @@
     }
 
     & > .body {
-        width: calc(100% - 40px);
+        @include clearfix;
+        @include border-box-full-width;
+
         padding: 20px;
         background: $main-backgroud;
-        @include clearfix;
     }
 
     & > .body > .footer {

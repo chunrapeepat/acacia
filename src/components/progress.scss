@@ -2,14 +2,12 @@ $progress-height: 25;
 $progress-padding: 2;
 
 .aca-progress {
-    box-sizing: border-box;
+    @include border-box-full-width;
+    @include sinking-border;
 
-    width: 100%;
     height: #{$progress-height}px;
     padding: #{$progress-padding}px;
     background: $main-backgroud;
-
-    @include sinking-border;
 
     & > .aca-progress-bar {
         // NOTE: hight - padding * 2 (top & bottom) - 3 (border size)
