@@ -1,51 +1,38 @@
-::-ms-expand {
-    display: none;
-}
+.aca-text-field {
+    @include input-border;
+    @include border-box-full-width;
 
-input.aca-text-field {
     outline: none;
     padding: 5px 7px;
-    font-size: 16px;
-    width: calc(100% - 10px);
-
-    @include input-border;
+    font-size: #{$default-font-size}px;
 }
 
-select.aca-select {
+.aca-select {
+    @include input-border;
+
     appearance: none;
     outline: none;
     padding: 5px 7px;
     padding-right: 50px;
-    font-size: 16px;
     border-radius: 0;
     text-overflow: '';
     text-indent: 0.01px;
-    background: url(img/dropdown-icon.png) no-repeat 100% 0;
+    font-size: #{$default-font-size}px;
+    background: url(img/dropdown-icon.png) white no-repeat 100% 0;
     background-size: 23px;
-    background-color: white;
-
-    @include input-border;
-
-    &::before {
-        content: 'dick';
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        background-color: red;
-    }
 }
 
 input.aca-checkbox {
-    appearance: none;
+    @include input-border;
+
     width: 17px;
     height: 17px;
+    appearance: none;
     display: inline-block;
     position: relative;
     outline: none;
     border-radius: 0;
     background-color: white;
-
-    @include input-border;
 
     &:checked {
         background: url(img/checkmark.png) no-repeat 0 1px;
@@ -54,22 +41,22 @@ input.aca-checkbox {
 }
 
 input.aca-radio {
-    appearance: none;
+    @include input-border;
+
     width: 20px;
     height: 20px;
+    appearance: none;
     display: inline-block;
     position: relative;
     outline: none;
     border-radius: 100%;
     background-color: white;
 
-    @include input-border;
-
     &:checked:after {
+        @include set-position($top: 4, $left: 4);
+
         content: '';
         position: absolute;
-        top: 4px;
-        left: 4px;
         width: 8px;
         height: 8px;
         border-radius: 100%;
