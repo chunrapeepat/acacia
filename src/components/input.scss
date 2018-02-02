@@ -22,6 +22,7 @@ select.aca-select {
     text-indent: 0.01px;
     background: url(img/dropdown-icon.png) no-repeat 100% 0;
     background-size: 23px;
+    background-color: white;
 
     @include input-border;
 
@@ -42,6 +43,7 @@ input.aca-checkbox {
     position: relative;
     outline: none;
     border-radius: 0;
+    background-color: white;
 
     @include input-border;
 
@@ -59,6 +61,7 @@ input.aca-radio {
     position: relative;
     outline: none;
     border-radius: 100%;
+    background-color: white;
 
     @include input-border;
 
