@@ -1,0 +1,58 @@
+::-ms-expand {
+    display: none;
+}
+
+input.aca-text-field {
+    outline: none;
+    padding: 5px 7px;
+    font-size: 16px;
+    width: calc(100% - 10px);
+    border-top: ridge 2px black;
+    border-left: ridge 2px black;
+    border-bottom: ridge 2px white;
+    border-right: ridge 2px white;
+}
+
+select.aca-select {
+    appearance: none;
+    outline: none;
+    padding: 5px 7px;
+    padding-right: 50px;
+    font-size: 16px;
+    border-radius: 0;
+    text-overflow: '';
+    text-indent: 0.01px;
+    border-top: ridge 2px black;
+    border-left: ridge 2px black;
+    border-bottom: ridge 2px white;
+    border-right: ridge 2px white;
+    background: url(img/dropdown-icon.png) no-repeat 100% 0;
+    background-size: 23px;
+
+    &::before {
+        content: 'dick';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+}
+
+input.aca-checkbox {
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    border-radius: 0;
+    border-top: ridge 2px black;
+    border-left: ridge 2px black;
+    border-bottom: ridge 2px white;
+    border-right: ridge 2px white;
+
+    &:checked {
+        background: url(img/checkmark.png) no-repeat 0 1px;
+        background-size: 14px;
+    }
+}
