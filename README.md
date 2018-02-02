@@ -107,5 +107,5 @@ yarn dev # this will run gulp development task
 4. That's it!
 
 <hr>
-Made with <3 by Chun Rapeepat @chunza2542, Codebase from [Biomatic CSS Framework](https://github.com/BioMaRu/biomatic), Thank.
+Made with 💖 by Chun Rapeepat @chunza2542, Codebase from https://github.com/BioMaRu/biomatic, Thank.
 
