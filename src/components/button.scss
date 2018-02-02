@@ -6,18 +6,14 @@ $button-font-size: 16px;
     position: relative;
     font-size: $button-font-size;
     padding: 5px 12px;
-    border-top: ridge 1px white;
-    border-left: ridge 1px white;
-    border-bottom: ridge 2px black;
-    border-right: ridge 2px black;
     background-color: $main-backgroud;
 
+    @include floating-border;
+
     &:active {
-        border-top: ridge 1px black;
-        border-left: ridge 1px black;
-        border-bottom: ridge 2px white;
-        border-right: ridge 2px white;
         background-color: $main-backgroud-hover;
+
+        @include sinking-border;
     }
 
     &:active::before {

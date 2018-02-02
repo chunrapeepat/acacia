@@ -7,10 +7,8 @@ input.aca-text-field {
     padding: 5px 7px;
     font-size: 16px;
     width: calc(100% - 10px);
-    border-top: ridge 2px black;
-    border-left: ridge 2px black;
-    border-bottom: ridge 2px white;
-    border-right: ridge 2px white;
+
+    @include input-border;
 }
 
 select.aca-select {
@@ -22,12 +20,10 @@ select.aca-select {
     border-radius: 0;
     text-overflow: '';
     text-indent: 0.01px;
-    border-top: ridge 2px black;
-    border-left: ridge 2px black;
-    border-bottom: ridge 2px white;
-    border-right: ridge 2px white;
     background: url(img/dropdown-icon.png) no-repeat 100% 0;
     background-size: 23px;
+
+    @include input-border;
 
     &::before {
         content: 'dick';
@@ -46,10 +42,8 @@ input.aca-checkbox {
     position: relative;
     outline: none;
     border-radius: 0;
-    border-top: ridge 2px black;
-    border-left: ridge 2px black;
-    border-bottom: ridge 2px white;
-    border-right: ridge 2px white;
+
+    @include input-border;
 
     &:checked {
         background: url(img/checkmark.png) no-repeat 0 1px;
@@ -65,10 +59,8 @@ input.aca-radio {
     position: relative;
     outline: none;
     border-radius: 100%;
-    border-top: ridge 2px black;
-    border-left: ridge 2px black;
-    border-bottom: ridge 2px white;
-    border-right: ridge 2px white;
+
+    @include input-border;
 
     &:checked:after {
         content: '';

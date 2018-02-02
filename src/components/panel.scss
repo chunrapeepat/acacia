@@ -1,9 +1,7 @@
 .aca-panel {
     width: 100%;
-    border-top: ridge 1px white;
-    border-left: ridge 1px white;
-    border-bottom: ridge 2px black;
-    border-right: ridge 2px black;
+
+    @include floating-border;
 
     & > .header {
         width: calc(100% - 20px);

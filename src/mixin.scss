@@ -1,3 +1,24 @@
+@mixin floating-border {
+    border-top: ridge 1px white;
+    border-left: ridge 1px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px black;
+}
+
+@mixin sinking-border {
+    border-top: ridge 1px black;
+    border-left: ridge 1px black;
+    border-bottom: ridge 2px white;
+    border-right: ridge 2px white;
+}
+
+@mixin input-border {
+    border-top: ridge 2px black;
+    border-left: ridge 2px black;
+    border-bottom: ridge 2px white;
+    border-right: ridge 2px white;
+}
+
 @mixin clearfix() {
   &::after {
     display: block;
