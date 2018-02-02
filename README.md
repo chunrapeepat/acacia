@@ -42,6 +42,16 @@ This code showing an example of Copying Files panel
 
 
 ## Contribution Guide
+1. Fork & clone this repository to your local directory
+```bash
+git clone https://github.com/chunza2542/acacia.git
+```
+2. Run project in development environment
+```bash
+yarn dev # this will run gulp development task
+```
+3. After finish updating, Send pull request to this repo.
+4. That's it!
 
 <hr>
 Made with <3 by Chun Rapeepat @chunza2542, Codebase from [Biomatic CSS Framework](https://github.com/BioMaRu/biomatic), Thank.
