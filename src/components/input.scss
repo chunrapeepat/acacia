@@ -56,3 +56,28 @@ input.aca-checkbox {
         background-size: 14px;
     }
 }
+
+input.aca-radio {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    border-radius: 100%;
+    border-top: ridge 2px black;
+    border-left: ridge 2px black;
+    border-bottom: ridge 2px white;
+    border-right: ridge 2px white;
+
+    &:checked:after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background: black;
+    }
+}
