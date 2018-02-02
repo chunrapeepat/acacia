@@ -17,6 +17,26 @@ Download `dist` folder to your project directory, then put this code inside you 
 ```html
 <link rel="stylesheet" href="path/to/your/acacia.min.css">
 ```
+### Example
+This code showing an example of Copying Files panel
+```html
+<div class="aca-panel">
+    <div class="header">Copying Files...</div>
+    <div class="body">
+      Source:<br>
+      L:\COMMON\CLIENT32\WIN95\MAIN<br>
+      Destination:<br>
+      C:\WINDOW<br><br>
+      <div class="aca-progress">
+          <div style="width: 35%;" class="aca-progress-bar"></div>
+      </div>
+      <br>
+      <center>
+          <button class="aca-button">Cancel</button>
+      </center>
+    </div>
+</div>
+```
 
 ## Documentation
 
@@ -24,5 +44,5 @@ Download `dist` folder to your project directory, then put this code inside you 
 ## Contribution Guide
 
 <hr>
-Made with <3 by Chun Rapeepat @chunza2542, Codebase from [Biomatic CSS Framework], Thank.(https://github.com/BioMaRu/biomatic)
+Made with <3 by Chun Rapeepat @chunza2542, Codebase from [Biomatic CSS Framework](https://github.com/BioMaRu/biomatic), Thank.
 
